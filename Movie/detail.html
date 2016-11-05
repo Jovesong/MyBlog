@@ -1,0 +1,67 @@
+<p class="marker">
+    <span class="glyphicon glyphicon-map-marker"></span>
+    <a href="#/home">首页</a>
+    &gt;&nbsp;
+    <a href="#/movie">电影</a> &gt;&nbsp;
+    <a>{{movies.title}}</a>
+</p>
+<div class="list-group"  ng-show="show" id="detail">
+    <div class="list-group-item">
+        <div class="list-group-item-text">
+            <div class="media">
+                <div class="media-left">
+                    <img ng-src={{movies.images.large}} alt="" class="media-object visible-lg-block visible-md-block">
+                </div>
+                <div class="media-dody media-left">
+                    <div class="list-group">
+                        <div class="list-group-item" style="border: none; margin-top: 30px;">
+                            <h1 class="media-heading ">
+                                {{movies.title}}
+                            </h1>
+                            <img ng-src={{movies.images.large}} alt="" class="media-object visible-xs-block visible-sm-block">
+                            <div class="list-group-item-text">
+                                <p class="text-capitalize">  &nbsp;</p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">评分:</strong>
+                                    {{movies.rating.average}}分
+                                </p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">导演:</strong>
+                                    <span ng-repeat="director in movies.directors">{{director.name}}&nbsp;&nbsp;</span>
+                                </p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">主演:</strong>
+                                    <span ng-repeat="cast in movies.casts">{{cast.name}}&nbsp;&nbsp;</span>
+                                </p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">类型:</strong>
+                                    {{movies.genres.join("&nbsp;")}}
+                                </p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">地区:</strong>
+                                    {{movies.countries.join("&nbsp;")}}
+                                </p>
+                                <p class="text-capitalize">
+                                    <strong class="text-primary">简介:</strong>
+                                    {{summary}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mask" ng-hide="show">
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+</div>
+
+

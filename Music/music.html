@@ -1,0 +1,67 @@
+<p class="marker">
+    <span class="glyphicon glyphicon-map-marker"></span>
+    <a href="#/home">首页</a>
+    &gt;&nbsp;<a>音乐</a>
+</p>
+
+<div class="music">
+    <div class="music-content">
+        <div class="music-left">
+            <h1><span class="glyphicon glyphicon-fire"></span>小伟</h1>
+            <div class="play">
+                <h4><i></i><span>{{name}}</span></h4>
+                <div class="play-box">
+                    <div class="song">
+                        <div class="thumbnail" style="border: none">
+                            <div id="picture"></div>
+                            <img ng-src='{{music.picture}}' style="width: 240px;height: 240px;margin-top: 5px;" >
+
+                            <div class="caption">
+                                <p class="song-name">{{music.title}}</p>
+                                <p class="song-author">{{music.artist}}</p>
+                                <ul class="clearfix">
+                                    <li class="item-play" ng-click="play(music.url)">
+                                        <span class="glyphicon glyphicon-pause">
+                                        </span>
+                                    </li>
+                                    <li class="item-next" ng-click="next(channel.channels_id)">
+                                        <span class="glyphicon glyphicon-forward"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="progress song-progress">
+                            <div class="progress-bar  progress-time" >
+                            </div>
+                        </div>
+                        <div class="song-time">
+                            <span class="play-time">00:00</span>
+                            <span class="song-l">/</span>
+                            <span class="total-time">00:00</span>
+                            <span class="voice glyphicon glyphicon-volume-down" ng-click="noVoice()"></span>
+                            <span class="voice-progress">
+                                <div class="progress" ng-click="voice()" id="voi">
+                                    <div class="progress-bar  progress-times" >
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lrc"></div>
+                </div>
+            </div>
+        </div>
+        <div class="music-right">
+            <h4>无论您是在工作、娱乐、学习，打开随心听，好音乐随时陪伴在您身边。</h4>
+           <ul class="Channel">
+               <li ng-repeat="channel in channels" ng-click="select(channel)" id="{{channel.channel_id}}">
+                   <span></span>{{channel.name}}
+               </li>
+           </ul>
+        </div>
+
+        <a class="btns btn-change" ng-click="change()"><span >换台</span><span class="glyphicon glyphicon-chevron-right"></span></a>
+        <a class="btns btn-back"   ng-click="back()"><span class="glyphicon glyphicon-chevron-left"></span> <span >返回</span></a>
+    </div>
+</div>
+

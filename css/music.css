@@ -1,0 +1,220 @@
+.music{
+    width: 1000px;
+    background: url("../img/forenoon.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.music .music-content{
+    width: 2000px;
+    height: 700px;
+    position: relative;
+}
+
+.music .music-content .music-left{
+    width: 1000px;
+    height: 700px;
+    float: left;
+    position: relative;
+}
+.music .music-content .music-left h1{
+    padding: 30px;
+}
+
+/*播放器*/
+.music .music-content .music-left .play{
+    width: 610px;
+    height: 490px;
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    cursor: pointer;
+}
+
+.music .music-content .music-left .play h4{
+    width: 120px;
+    height: 40px;
+}
+
+.music .music-content .music-left .play h4 i{
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(../img/song-move.gif) no-repeat;
+    margin-right: 10px;
+}
+.music .music-content .music-left .play .song{
+    position: relative;
+    margin-top: 0;
+    width: 260px;
+    height: 450px;
+    background: #fff;
+    float: left;
+}
+#picture{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0);
+    text-align: center;
+    line-height: 240px;
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 999;
+}
+.music .music-content .music-left .play .song .song-name{
+    width: 240px;
+    height: 30px;
+    font-size: 18px;
+}
+
+.music .music-content .music-left .play .song .song-author{
+    width: 240px;
+    height: 24px;
+    font-size: 16px;
+}
+.music .music-content .music-left .play .song ul{
+    width: 120px;
+    height: 20px;
+    font-size: 22px;
+}
+.music .music-content .music-left .play .song ul li{
+    float: left;
+}
+.item-play{
+    margin-left: 10px;
+}
+.item-next{
+    margin-left: 40px;
+}
+.song-progress{
+    width: 260px;
+    height: 3px;
+}
+
+.progress-times{
+    width: 50%;
+}
+/*歌曲时间*/
+.song-time{
+    width: 240px;
+    height: 40px;
+    margin: 0 auto;
+}
+.song-time .play-time,.song-time .total-time,.song-time .song-l{
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.song-time .voice{
+    margin-top: 5px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.song-time .voice-progress .progress{
+    margin-right: 30px;
+    margin-top: 17px;
+    float: right;
+    width: 70px;
+    height: 5px;
+}
+/*歌词*/
+.music .music-content .music-left .play .lrc{
+    margin-top: 0;
+    width: 330px;
+    height: 450px;
+    background: rgba(0,0,0,.7);
+    float: left;
+    overflow: hidden;
+}
+
+.music .music-content .music-left .play .lrc ul{
+    margin-left: 30px;
+    color: #ffffff;
+
+}
+.music .music-content .music-left .play .lrc ul li{
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    margin: 10px 0;
+    opacity: 0.7;
+}
+.music .music-content .music-left .play .lrc ul .check{
+    font-size: 20px;
+    margin: 20px 0;
+    opacity: 1;
+}
+
+/*歌曲分类*/
+.music .music-content .music-right{
+    width: 1000px;
+    height: 700px;
+    float: left;
+}
+
+.music .music-content .music-right h4{
+    color: #fff;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+.music .music-content .music-right .Channel{
+    margin: 20px auto;
+    width: 640px;
+    height: 500px;
+}
+
+.music .music-content .music-right .Channel li{
+    width: 140px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: rgba(0,0,0,0.15);
+    float:left;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+
+}
+.music .music-content .music-right .Channel li .check{
+    position: absolute;
+    top:14px;
+    left: 20px;
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background: url(../img/song-move.gif) no-repeat;
+}
+/*换台*/
+
+.music .music-content .btns{
+    width: 100px;
+    height: 260px;
+    z-index: 999;
+    font-size: 30px;
+    /*background: rgba(0,0,0,0.1);*/
+    line-height: 260px;
+    text-decoration: none;
+    color: #fff;
+}
+.music .music-content .btn-change{
+    position: absolute;
+    top:220px;
+    left: 900px;
+}
+
+.music .music-content .btn-back{
+    position: absolute;
+    top:220px;
+    right: 900px;
+}

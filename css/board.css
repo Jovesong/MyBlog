@@ -1,0 +1,46 @@
+.marker{
+    font-size: 16px;
+    margin-top: 5px;
+
+}
+.board{
+    width: 1000px;
+    background: #fff;
+    box-shadow: 2px 2px 5px gray;
+}
+.board .board-content{
+    margin: 0 auto;
+    width: 950px;
+}
+.board .board-content h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.board .board-content .alert .glyphicon{
+    color: #6ba1bd;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.board .board-content .alert span{
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.board .board-content .row  img{
+    width: 800px;
+    height: 190px;
+}
+.board .board-content .row  h3{
+    color: #ff00ff;
+    margin-left: 20px;
+}
+.panel .panel-body .input-group{
+    margin-top: 20px;
+}
+.panel .panel-body .media .media-left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}

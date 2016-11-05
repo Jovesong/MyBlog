@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="banner-wrap">
+    <div class="banner-left">
+        <div class="content">
+            <ul id="bannerContent">
+                <li ng-repeat="img in imgs">
+                    <a  class="thumbnail">
+                        <img ng-src={{img}}>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="switch-btn-box">
+            <div class="hover-bg" id="hover"></div>
+            <ul id="switchBtn">
+                <li ng-repeat="im in imgs">
+                    <a>
+                        <img ng-src={{im}}>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="banner-right">
+        <p class="banner-right-text animated slideInDown">
+            <span ng-repeat="word in sentence">
+                {{word}}
+            </span>
+        </p>
+
+    </div>
+</div>
+
+<div class="home-content">
+    <div class="home-content-left">
+        <div>
+            <div class="home-content-title">
+                <blockquote>推荐电影</blockquote>
+                <div class="most">
+                    <a href="#/movie" >更多</a>
+                </div>
+            </div>
+
+
+            <div class="lists">
+                <div class="li-text animated bounceInLeft clearfix">
+                    <div class="aside">
+                        <img src="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2388132117.jpg"/>
+                        <div class="aside-name">
+                            <h4>奇异博士</h4>
+                            <p>评分: 8.0</p>
+                            <p>导演: 斯科特·德瑞克森  </p>
+                            <p>主演: 本尼迪克特·康伯巴奇  蒂尔达·斯文顿</p>
+                            <p>类型: 冒险 奇幻</p>
+                            <p>地区: 美国</p>
+                        </div>
+                    </div>
+                    <div class="aside">
+                        <img src="https://img1.doubanio.com/view/movie_poster_cover/lpst/public/p2385311728.jpg"/>
+                        <div class="aside-name">
+                            <h4>机械师2：复活</h4>
+                            <p>评分: 5.7</p>
+                            <p>导演: 丹尼斯·甘塞尔</p>
+                            <p>主演: 杰森·斯坦森  杰西卡·阿尔芭 杨紫琼 </p>
+                            <p>类型: 动作 犯罪</p>
+                            <p>地区: 法国 美国</p>
+                        </div>
+                    </div>
+                    <div class="aside">
+                        <img src="https://img3.doubanio.com/view/movie_poster_cover/lpst/public/p2391931833.jpg"/>
+                        <div class="aside-name">
+                            <h4>钢铁骑士</h4>
+                            <p>评分: 8.0</p>
+                            <p>导演: 斯特瓦特·亨德尔</p>
+                            <p>主演: 本·温切尔  乔什·布雷纳  玛丽亚·贝罗  安迪·加西亚</p>
+                            <p>类型: 动作 科幻 冒险</p>
+                            <p>地区: 美国</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="home-content-title">
+                <blockquote>推荐音乐</blockquote>
+                <div class="most">
+                    <a href="#/music" >更多</a>
+                </div>
+            </div>
+
+
+            <div class="lists">
+                <div class="li-text animated bounceInLeft clearfix">
+                    <table class="table table-hover list-music">
+                        <tr><th>序号</th><th>音乐标题</th><th>歌手</th><th>操作</th></tr>
+                        <tr><td>1</td><td>纠缠</td><td>谢霆锋</td>
+                            <td>
+                                <a  ng-click="play('http://yinyueshiting.baidu.com/data2/music/124041359/8772061477947661128.mp3?xcode=44222578794ae36929676627b54cb918')">播放</a>
+                                <a  ng-click="pause()">暂停</a>
+                            </td>
+                        </tr>
+                        <tr><td>2</td><td>阳光宅男</td><td>周杰伦</td>
+                            <td>
+                                <a  ng-click="play('http://yinyueshiting.baidu.com/data2/music/42824686/270910165600128.mp3?xcode=00b8f5d78806e13396a2d3f13bf86a03')">播放</a>
+                                <a  ng-click="pause()">暂停</a>
+                            </td>
+                        </tr>
+                        <tr><td>3</td><td>ロケットスニーカー</td><td>大冢爱</td>
+                            <td>
+                                <a  ng-click="play('http://yinyueshiting.baidu.com/data2/music/42688240/13780407140400128.mp3?xcode=287e0bf02b020b7b85429371225e2601')">播放</a>
+                                <a  ng-click="pause()">暂停</a>
+                            </td>
+                        </tr>
+                        <tr><td>4</td><td>Tik Tok</td><td>Ke$ha</td>
+                            <td>
+                                <a  ng-click="play('http://yinyueshiting.baidu.com/data2/music/42294569/5858991477965661128.mp3?xcode=75ac221235dc9d42bdfb5657fcf2438e')">播放</a>
+                                <a  ng-click="pause()">暂停</a>
+                            </td>
+                        </tr>
+                        <tr><td>5</td><td>This Love</td><td>Maroon 5</td>
+                            <td>
+                                <a  ng-click="play('http://yinyueshiting.baidu.com/data2/music/42498484/8182419183600128.mp3?xcode=92e80319874f06dc39ce60c9b3abe9ef')">播放</a>
+                                <a  ng-click="pause()">暂停</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="home-content-title">
+                <blockquote>项目</blockquote>
+                <div class="most">
+                    <a href="#/learn" >更多</a>
+                </div>
+            </div>
+            <div class="lists">
+                <div class="li-project animated bounceInLeft clearfix">
+                    <div class="li-projects">
+                        <img src="project/images/g1.jpg"/>
+                        <p>网页版微信打飞机</p>
+                    </div>
+                    <div class="li-projects">
+                        <img src="project/images/g4.jpg"/>
+                        <p>高仿天涯论坛</p>
+                    </div>
+                    <div class="li-projects">
+                        <img src="project/images/g8.jpg"/>
+                        <p>高仿京东wepApp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="home-content-right">
+        <blockquote>时光荏苒，白驹过隙</blockquote>
+        <div class="date">
+          <!-- Table -->
+          <table class="table tab" border="1px solid #ddd" cellspacing="0">
+          </table>
+      </div>
+      <div class="weixin" >
+          <blockquote>扫描二维码加小伟微信</blockquote>
+          <a href="/#">
+              <img src="img/xiaowei.jpg" alt=""/>
+          </a>
+      </div>
+    </div>
+</div>
+
+</body>
+</html>

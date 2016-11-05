@@ -1,0 +1,238 @@
+
+/*--portfolio--*/
+
+#projects{
+	width: 1000px;
+}
+.portfolio .title{
+	font-size: 4em;
+	text-align: center;
+	color: #008B8B;
+	border-bottom: 4px double rgba(247, 197, 106, 0.35);
+	padding-bottom: 0.2em;
+	margin-bottom: 1em;
+}
+ul.resp-tabs-list {  
+/*-- w3layouts --*/
+background: #F7E612;
+}
+.sap_tabs{
+	clear:both;
+	padding: 0;
+}
+.tab_box{
+	background:#fd926d;
+	padding: 2em;
+}
+.top1{
+	margin-top: 2%;
+}
+.resp-tabs-list {
+    list-style: none;
+    margin: 0 auto 3em;
+    text-align: center;
+}
+.resp-tab-item {
+    color: #000;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    outline: none;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0.8em 2em;
+    font-weight: 400;
+	position:relative;
+}
+.resp-tab-item:hover{
+    color: #1D9898;
+}
+.resp-tab-active,.resp-tab-active:hover{
+    text-shadow: none;
+    color: #fff;
+    background: #1D9898;
+}
+.resp-tab-active:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -7px;
+    left: 41%;
+	/*-- agileits --*/
+    border-style: solid;
+    border-width: 7px 7px 0 7px;
+    border-color: #1D9898 transparent transparent transparent;
+}
+.resp-tabs-container {
+	padding: 0px;
+	clear: left;	
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+}
+.resp-content-active, .resp-accordion-active {
+   display: block;
+}
+/*--//SAP--*/
+/*--img-hover--*/
+.portfolio-grids {
+    margin-top: 2em;
+}
+.grid {
+	position: relative;
+	overflow:hidden;
+	background: #000;
+}
+.grid img {
+	opacity: 0.8;
+}
+.grid .figcaption {
+    padding: 2em 2.5em;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.grid .figcaption::before,
+.grid .figcaption::after {
+	pointer-events: none;
+}
+
+.grid .figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid .figcaption p{
+	font-size: 16px;
+}
+/* Anchor will cover the whole item by default */
+
+.grid img {
+	max-width: none;
+	width: 600px;
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-moz-transition: opacity 0.35s, -moz-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	-moz-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-o-transform: translate3d(-10px,0,0);
+	-ms-transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid:hover img {
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);	
+}
+.grid .figcaption {
+	text-align: left;
+}
+.grid h3 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+	-moz-opacity: 0;
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+}
+.grid h3 span {
+    font-weight: 800;
+    margin-left: 5px;
+}
+.grid h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	-moz-transition: transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	-moz-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+	-o-transform: translate3d(-100%,0,0);
+	-ms-transform: translate3d(-100%,0,0);
+}
+.grid:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+.grid:hover h3 {
+	-moz-opacity:1;
+	opacity:1;
+}
+.grid p {
+    padding: 1em 0 0;
+	-moz-opacity:1;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-moz-transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+	-moz-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+	-o-transform: translate3d(100%,0,0);
+	-ms-transform: translate3d(100%,0,0);
+    color: #fff;
+    letter-spacing: 2px;
+}
+.grid:hover p {
+	-moz-opacity: 1;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+
+.bar-grids {
+    padding: 0 2em;
+    float: left;
+    width: 50%;
+}
+.portfolio-grids {
+    margin-top: 1em;
+    width: 33.33%;
+    padding: 0 .5em;
+	float: left;
+}
+.grid .figcaption {
+    padding: 1em 1.5em;
+}
+.grid h3 {
+    font-size: 1.5em;
+}
+.grid p {
+    letter-spacing: 1px;
+}
+
+

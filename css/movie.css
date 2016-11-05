@@ -1,0 +1,57 @@
+.home-content .home-content-left .movie-left{
+    background: #fff;
+    width: 680px;
+    border-radius: 5px 5px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 10px 20px;
+}
+
+.home-content .home-content-left .movie-left h4{
+    margin-top:  0px;
+}
+.home-content .home-content-right .rank {
+    box-shadow: 2px 2px 5px gray;
+    background: #fff;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.home-content .home-content-right .rank p{
+    width: 280px;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.home-content .home-content-right .rank p:last-of-type{
+    border: none;
+}
+.home-content .home-content-right .rank  p  a{
+    font-size: 18px;
+}
+.home-content .home-content-right .rank .movie-search{
+    width: 280px;
+    height: 74px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.home-content .home-content-right .rank .movie-search .movie-form{
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+.home-content .home-content-right .rank .movie-search .movie-form span{
+    radius-topleft: 5px 5px;
+    radius-bottomleft: 5px 5px;
+}
+.home-content .home-content-right .rank .movie-search .movie-form input{
+    radius-topright: 5px 5px;
+    radius-bottomright: 5px 5px;
+}
+#detail{
+    width: 1000px;
+}
+
+#detail p{
+    font-size: 15px;
+}

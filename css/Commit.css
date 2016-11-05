@@ -1,0 +1,30 @@
+body,li,div,header,nav,ul,a,li,ol,footer,h4{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #efefef;
+    font-size: 12px;
+}
+ul{
+    list-style: none;
+}
+
+/*Çå³ý¸¡¶¯*/
+.clearfix:before,.clearfix:after
+{
+    content:"";
+    display:block;
+}
+.clearfix:after
+{
+    clear:both;
+}
+.clearfix
+{
+    *zoom:1;/*IE/7/6*/
+}
+
+#fr{
+    display: none;
+}
